@@ -302,7 +302,7 @@ export const AboutSection = () => {
                 src={pfp}
                 alt="Pfp"
                 loading="lazy"
-                className="size-20 bg-slate-300 rounded-full p-1"
+                className="size-32 bg-black rounded-full p-1"
               />
             </div>
           </div>

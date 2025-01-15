@@ -8,7 +8,7 @@ export const Header = () => {
           <Link href="">Home</Link>
         </li>
         <li className="header-item text-yellow-50/80 hover:text-yellow-50 hover:bg-yellow-50/20">
-          <Link href="/#repos">Projects</Link>
+          <Link href="/#projects">Projects</Link>
         </li>
         <li className="header-item text-yellow-50/80 hover:text-yellow-50 hover:bg-yellow-50/20">
           <Link href="/#about">About</Link>

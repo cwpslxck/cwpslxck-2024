@@ -14,7 +14,7 @@ export const HeroSection = () => {
         </div>
       </div>
 
-      <div className="container flex flex-col items-center pt-36 md:pt-48">
+      <div className="container flex flex-col items-center pt-48">
         <div className="z-0 flex flex-col items-center">
           <Image
             src={cwpslxck}
@@ -44,21 +44,20 @@ export const HeroSection = () => {
             <p className="text-center text-lg font3">
               very junior frontend developer
               <br />
-              interested in startups & arts & video creation
+              interested in software companies & startups & art
             </p>
           </div>
         </div>
-        <div className="flex flex-col md:flex-row py-8 gap-4 text-lg">
-          <button className="flex z-40 justify-center items-center bg-transparent gap-1 border border-yellow-500/40 px-5 py-2 rounded-xl">
+        <div className="flex justify-center items-center flex-col md:flex-row py-8 gap-4 text-lg">
+          <a
+            className="flex z-40 justify-center items-center bg-transparent gap-1 border border-yellow-500/40 px-5 py-2 rounded-xl"
+            target="_blank"
+            about="Download CV Resume File"
+            href="/resume.pdf"
+          >
             <ArrowDown className="size-5" />
-            <a
-              target="_blank"
-              about="Download CV Resume File"
-              href="/resume.pdf"
-            >
-              Download CV File
-            </a>
-          </button>
+            Download CV File
+          </a>
           <a href="#collab">
             <button className="flex z-40 justify-center gap-1 px-5 py-2 rounded-xl bg-white text-black hover:bg-stone-200 transition-colors">
               <span>Collab With Me</span>

@@ -9,10 +9,6 @@ const socials = [
     link: "https://x.com/cwpslxck",
   },
   {
-    title: "LinkedIn",
-    link: "https://xlinkedin.com/cwpslxck",
-  },
-  {
     title: "Telegram",
     link: "https://cwpslxck.t.me",
   },
@@ -41,7 +37,7 @@ export const Footer = () => {
           </div>
           <div className="w-full flex justify-center md:justify-end">
             <div
-              title="this pishi is taking a nap, dont bother him :("
+              title="this pishi is LALA. aziatesh nakon :("
               className="size-24 bg-center bg-contain cursor-grab"
               style={{
                 backgroundImage: `url(${pishi.src})`,

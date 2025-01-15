@@ -13,6 +13,7 @@ const portfolioProjects = [
     company: "Vlonefarsi",
     year: "2024",
     title: "Print On Demond Dropshiping",
+    softskills: ["Sell Online", "Management", "Talking To Customer"],
     results: [
       { title: "More Than 100 Sales in First Month" },
       { title: "Traget Audience is Iranian People Between 17 - 25" },
@@ -25,6 +26,7 @@ const portfolioProjects = [
     company: "Trapfa",
     year: "2023",
     title: "New Generation of Persian Music Community",
+    softskills: ["Coding real-world project", "Management"],
     results: [
       { title: "Activly Posting More Than 6 Months on Telegram" },
       { title: "Many Viral Reels on Instagram" },
@@ -37,6 +39,7 @@ const portfolioProjects = [
     company: "cwp$lxck",
     year: "2021",
     title: "Fun Content Creation for Teenagers",
+    softskills: ["researching", "knowing target audience"],
     results: [
       { title: "Posting More Than 100 Posts on Instagram" },
       { title: "Many Viral Reels on Instagram" },
@@ -82,6 +85,18 @@ export const ProjectsSection = () => {
                   </li>
                 ))}
               </ul>
+              <div className="inline-flex flex-wrap justify-start items-center gap-3 mt-2">
+                {project.softskills.map((ss, index) => (
+                  <div
+                    className="bg-white/10 px-4 py-1 rounded-full"
+                    key={index}
+                  >
+                    <span className="text-sm font-light tracking-tight uppercase">
+                      {ss}
+                    </span>
+                  </div>
+                ))}
+              </div>
               <a
                 className="cursor-pointer bg-white mt-3 text-black rounded-lg py-3 px-6 flex justify-center items-center text-base w-full md:w-fit"
                 href={project.link}
