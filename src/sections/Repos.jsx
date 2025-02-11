@@ -12,6 +12,7 @@ export const Repos = () => {
   const [repos, setRepos] = useState([]);
   const [imageError, setImageError] = useState({});
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     const fxtch = async () => {
@@ -23,6 +24,7 @@ export const Repos = () => {
         setLoading(false);
       } catch (error) {
         console.error("We have an error: ", error);
+        setError(error.message);
       }
     };
     fxtch();
@@ -42,7 +44,18 @@ export const Repos = () => {
         }
       />
       {loading ? (
-        <LoadingPart />
+        <>
+          <div className="w-full flex items-center flex-col">
+            {error ? (
+              <div className="mb-4 border-red-600/80 w-full md:w-auto border bg-red-600/20 text-white px-4 py-2 rounded-lg">
+                cant load repos from github right now :(
+              </div>
+            ) : (
+              <span></span>
+            )}
+            <LoadingPart />
+          </div>
+        </>
       ) : (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {repos.map((r, index) => (

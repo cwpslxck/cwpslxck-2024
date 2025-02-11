@@ -36,13 +36,14 @@ export const Footer = () => {
             ))}
           </div>
           <div className="w-full flex justify-center md:justify-end">
-            <div
+            <a
+              href="/auth"
               title="this pishi is LALA. aziatesh nakon :("
               className="size-24 bg-center bg-contain cursor-grab"
               style={{
                 backgroundImage: `url(${pishi.src})`,
               }}
-            ></div>
+            ></a>
           </div>
         </div>
       </div>

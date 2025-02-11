@@ -7,10 +7,10 @@ export const HeroSection = () => {
     <div className="relative overflow-x-clip">
       <div className="absolute inset-0 [mask-image:linear-gradient(to_bottom,transparent,black_60%,black_70%,transparent)]">
         <div className="flex items-center justify-center h-full w-full">
-          <div className="size-[400px] hero-ring"></div>
-          <div className="size-[600px] hero-ring"></div>
-          <div className="size-[800px] hero-ring"></div>
-          <div className="size-[1000px] hero-ring"></div>
+          <div className="size-[300px] hero-ring"></div>
+          <div className="size-[500px] hero-ring"></div>
+          <div className="size-[700px] hero-ring"></div>
+          <div className="size-[900px] hero-ring"></div>
         </div>
       </div>
 

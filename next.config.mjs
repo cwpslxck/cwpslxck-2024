@@ -9,6 +9,13 @@ const nextConfig = {
         pathname: "/cwpslxck/**",
         search: "",
       },
+      {
+        protocol: "https",
+        hostname: "dowrisqofdevphzogaak.supabase.co",
+        port: "",
+        pathname: "/storage/**",
+        search: "",
+      },
     ],
   },
   webpack(config) {

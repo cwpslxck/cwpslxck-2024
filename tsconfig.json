@@ -1,10 +1,6 @@
 {
   "compilerOptions": {
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -22,9 +18,7 @@
       }
     ],
     "paths": {
-      "@/*": [
-        "./src/*"
-      ]
+      "@/*": ["./src/*"]
     },
     "target": "ES2017"
   },
@@ -36,9 +30,10 @@
     "src/components/SectionHeader.jsx",
     "src/app/projects/photoshop/page.tsx",
     "src/components/RepoPart.jsx",
-    "src/sections/Repos.jsx"
-, "src/app/projects/page.jsx"  ],
-  "exclude": [
-    "node_modules"
-  ]
+    "src/sections/Repos.jsx",
+    "src/app/projects/page.jsx",
+    "middleware.ts",
+    "src/lib/supabase.js"
+  ],
+  "exclude": ["node_modules"]
 }
